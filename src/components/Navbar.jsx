@@ -7,7 +7,7 @@ import { BsBasket3} from 'react-icons/bs'
 
 import {AiOutlineSearch} from 'react-icons/ai'
 const Container =styled.div`
-height:60px;
+height:80px;
 `
 const Wrapper = styled.div`
 padding:10px 20px;
@@ -24,7 +24,7 @@ font-size:14;
 cursor: pointer;
 `
 const SearcContainer = styled.div`
-border: 0.5px solid lightgray;
+
 display:flex;
 aligin-item:center;
 margin-left:25px;
@@ -33,20 +33,29 @@ padding:5px;
 const Center = styled.div `
 flex:1;
 text-aligin:center;
+margin:1px;
 `
 const Input =styled.input`
-border:none;
+
+height:10px;
+padding:10px;
+margin:10px;
 `
 const Logo = styled.h1`
 font-weight:bold;
+padding:1px;
 `
 
 const Right = styled.div `
 flex:1;
+display:flex;
+aligin-item:center;
+justify-content:flex-end; 
 `
 const MenuItem = styled.div`
 font-size:14px;
 cursor:pointer;
+margin-left:25px;
 
 `
 
@@ -65,7 +74,7 @@ const Navbar = () => {
                         </Langue>  
                         <SearcContainer>
                             <Input />
-                    <AiOutlineSearch />
+                    <AiOutlineSearch style={{color:'gray',fontSize:'16'}}/>
                         </SearcContainer>
                             </Left>
                 <Center><Logo>Lama</Logo></Center>
@@ -82,7 +91,7 @@ const Navbar = () => {
             
                     </MenuItem>
                     
-                    RIGT</Right>
+                    </Right>
             
             </Wrapper>
         
